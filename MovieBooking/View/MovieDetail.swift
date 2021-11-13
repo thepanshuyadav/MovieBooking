@@ -11,52 +11,29 @@ struct MovieDetail: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false, content: {
             
-            LazyVStack(spacing: 15,
+            LazyVStack(spacing: 10,
                        pinnedViews: [.sectionFooters],
                        content: {
                 Section(footer: FooterView()) {
-//                    HStack {
-//
-//                        Button(action: {}, label: {
-//                            Image(systemName: "chevron.left")
-//                                .font(.title2)
-//                        })
-//                        Spacer()
-//                        Button(action: {}, label: {
-//                            Image(systemName: "bookmark")
-//                                .font(.title2)
-//                        })
-//                    }
-//                    .overlay(
-//                        Text("Movie Detail")
-//                            .font(.title2)
-//                            .fontWeight(.semibold)
-//                    )
-//                    .padding()
-//                    .foregroundColor(.white)
                     
                     
                     ZStack {
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.white.opacity(0.2))
-                            .padding(.horizontal)
-                            .offset(y: 12)
                         Image("poster")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: getRect().width/1.2, height: getRect().height/2, alignment: .center)
+                            .frame(width: getRect().width/1.1, height: getRect().height/1.6, alignment: .center)
                             .cornerRadius(16)
                     }
-                    .frame(width: getRect().width/1.5, height: getRect().height/2, alignment: .center)
-                    .padding(.top, 20)
+                    .padding(.top, 10)
+                    .shadow(color: .orange.opacity(0.5), radius: 10, x: 10, y: 10)
                     
                     
-                    VStack(alignment: .leading, spacing: 15,
+                    VStack(alignment: .leading, spacing: 10,
                            content: {
-                        Text("Dunkirk")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
+//                        Text("Dunkirk")
+//                            .font(.title2)
+//                            .fontWeight(.bold)
+//                            .foregroundColor(.white)
                         
                         Text("Director : Christopher  Nolan |  4")
                             .foregroundColor(.white)
@@ -95,7 +72,10 @@ struct MovieDetail: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
             })
-        }).background(Color("bg").ignoresSafeArea())
+        })
+            .background(Color("bg").ignoresSafeArea())
+            .navigationBarTitle("Dunkirk")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 

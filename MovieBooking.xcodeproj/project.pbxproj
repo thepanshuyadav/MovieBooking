@@ -18,9 +18,7 @@
 		D60ADC23273E7F2C000DC0ED /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60ADC22273E7F2C000DC0ED /* MovieModel.swift */; };
 		D60ADC25273E87DB000DC0ED /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60ADC24273E87DB000DC0ED /* BookingView.swift */; };
 		D60ADC2B273ECD8D000DC0ED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60ADC2A273ECD8D000DC0ED /* HomeView.swift */; };
-		D60ADC30273ED108000DC0ED /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D60ADC2F273ED107000DC0ED /* logo.gif */; };
-		D6C075D8273ED9160041AA75 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C075D7273ED9160041AA75 /* SplashScreen.swift */; };
-		D6C075DB273EDB2E0041AA75 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D6C075DA273EDB2E0041AA75 /* SDWebImageSwiftUI */; };
+		D6B08FA827402D130008B218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B08FA727402D130008B218 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +53,7 @@
 		D60ADC22273E7F2C000DC0ED /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		D60ADC24273E87DB000DC0ED /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		D60ADC2A273ECD8D000DC0ED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		D60ADC2F273ED107000DC0ED /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
-		D6C075D7273ED9160041AA75 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		D6B08FA727402D130008B218 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6C075DC273EDED20041AA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C075DB273EDB2E0041AA75 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,11 +144,10 @@
 		D60ADC1E273E7222000DC0ED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D60ADC2F273ED107000DC0ED /* logo.gif */,
 				D60ADC1F273E724F000DC0ED /* MovieDetail.swift */,
 				D60ADC24273E87DB000DC0ED /* BookingView.swift */,
 				D60ADC2A273ECD8D000DC0ED /* HomeView.swift */,
-				D6C075D7273ED9160041AA75 /* SplashScreen.swift */,
+				D6B08FA727402D130008B218 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,7 +177,6 @@
 			);
 			name = MovieBooking;
 			packageProductDependencies = (
-				D6C075DA273EDB2E0041AA75 /* SDWebImageSwiftUI */,
 			);
 			productName = MovieBooking;
 			productReference = D60ADBF1273E71FA000DC0ED /* MovieBooking.app */;
@@ -257,7 +251,6 @@
 			);
 			mainGroup = D60ADBE8273E71F9000DC0ED;
 			packageReferences = (
-				D6C075D9273EDB2E0041AA75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = D60ADBF2273E71FA000DC0ED /* Products */;
 			projectDirPath = "";
@@ -275,8 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B08FA827402D130008B218 /* LaunchScreen.storyboard in Resources */,
 				D60ADBFC273E71FC000DC0ED /* Preview Assets.xcassets in Resources */,
-				D60ADC30273ED108000DC0ED /* logo.gif in Resources */,
 				D60ADBF9273E71FC000DC0ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +297,6 @@
 			files = (
 				D60ADC23273E7F2C000DC0ED /* MovieModel.swift in Sources */,
 				D60ADC2B273ECD8D000DC0ED /* HomeView.swift in Sources */,
-				D6C075D8273ED9160041AA75 /* SplashScreen.swift in Sources */,
 				D60ADBF7273E71FA000DC0ED /* ContentView.swift in Sources */,
 				D60ADC20273E724F000DC0ED /* MovieDetail.swift in Sources */,
 				D60ADBF5273E71FA000DC0ED /* MovieBookingApp.swift in Sources */,
@@ -396,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -469,12 +461,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieBooking/Preview Content\"";
+				DEVELOPMENT_TEAM = 8M2K4CQRC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieBooking/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BookMyShow;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -499,12 +493,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieBooking/Preview Content\"";
+				DEVELOPMENT_TEAM = 8M2K4CQRC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieBooking/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BookMyShow;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -653,25 +649,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D6C075D9273EDB2E0041AA75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D6C075DA273EDB2E0041AA75 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D6C075D9273EDB2E0041AA75 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D60ADBE9273E71F9000DC0ED /* Project object */;
 }
