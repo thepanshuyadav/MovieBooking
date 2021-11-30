@@ -36,7 +36,7 @@ struct MovieDetail: View {
 //                            .foregroundColor(.white)
                         
                         Text("Director : Christopher  Nolan |  4")
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("text"))
                             .overlay(
                                 Image(systemName: "star.fill")
                                     .foregroundColor(.yellow)
@@ -49,8 +49,8 @@ struct MovieDetail: View {
                                     .font(.caption)
                                     .padding(.vertical, 10)
                                     .frame(maxWidth: .infinity)
-                                    .foregroundColor(.white)
-                                    .background(Color.white.opacity(0.1))
+                                    .foregroundColor(Color("text"))
+                                    .background(Color("text").opacity(0.1))
                                     .clipShape(Capsule())
                             }
                             
@@ -59,10 +59,10 @@ struct MovieDetail: View {
                         Text("Synopsis")
                             .font(.title3)
                             .fontWeight(.semibold)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("text"))
                             .padding(.vertical)
                         Text(synopsis)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("text"))
                         
                         
                     })
@@ -90,7 +90,7 @@ struct FooterView : View {
         NavigationLink(destination: BookingView(), label: {
             Text("Book Tickets")
                 .fontWeight(.bold)
-                .foregroundColor(.white)
+                .foregroundColor(Color("text"))
                 .padding(.vertical)
                 .frame(width: getRect().width / 2)
                 .background(Color.green)

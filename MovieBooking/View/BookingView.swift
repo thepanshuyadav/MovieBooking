@@ -88,7 +88,7 @@ struct BookingView: View {
                     )
                 Text("Booked")
                     .font(.caption)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("text"))
                 
                 RoundedRectangle(cornerRadius: 4)
                     .stroke(Color.blue, lineWidth: 2)
@@ -96,21 +96,21 @@ struct BookingView: View {
 
                 Text("Available")
                     .font(.caption)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("text"))
                 
                 RoundedRectangle(cornerRadius: 4)
                     .fill(Color.blue)
                     .frame(width: 20, height: 20)
                 Text("Selected")
                     .font(.caption)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("text"))
             }.padding(.top)
             
             HStack {
                 Text("Date : ")
                     .font(.title3)
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("text"))
                 Spacer()
                 DatePicker("", selection: $date, displayedComponents: .date)
                     .labelsHidden()
@@ -125,7 +125,7 @@ struct BookingView: View {
                     ForEach(time, id: \.self) { timing in
                         Text(timing)
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("text"))
                             .padding()
                             .background(Color.blue.opacity(selectedTime == timing ? 1 : 0.4))
                             .cornerRadius(10)
@@ -142,18 +142,17 @@ struct BookingView: View {
                     Text("\(selectedSeats.count) Seats")
                         .font(.caption)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("text"))
                     
                     Text("Rs \(selectedSeats.count * 250)")
                         .font(.title2)
-                        .fontWeight(.bold)
                         .foregroundColor(.yellow)
+                        
                 })
                     .frame(width: 100)
                 Button(action: {}, label: {
                     Text("Buy Tickets")
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("text"))
                         .padding(.vertical)
                         .frame(maxWidth: .infinity)
                         .background(selectedSeats.count == 0 ? Color.gray : Color.green)
@@ -171,7 +170,7 @@ struct BookingView: View {
                         Text("Select Seats")
                             .font(.title3)
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("text"))
                     }
                 }
             }
